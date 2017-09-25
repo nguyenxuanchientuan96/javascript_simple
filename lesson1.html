@@ -1,0 +1,101 @@
+<!-- //Javascript là một ngôn ngữ lập trình kịch bản dựa vào đối tượng phát triển có sẵn hoặc tự định nghĩa ra, javascript được sử dụng rộng rãi trong các ứng dụng Website. Javascript được hỗ trợ hầu như trên tất cả các trình duyệt như Firefox, Chrome, ... thậm chí các trình duyệt trên thiết bị di động cũng có hỗ trợ.
+
+//Những ứng dụng to lớn của Javascript khiến người ta không thể quên nó được. Hiện nay có rất nhiều libraries và framework được viết từ Javascript như:
+
+    // AngularJS: Một thư viện dùng để xây dựng ứng dụng Single Page
+    // NodeJS: Một thư viện được phát triển phía Server dùng để xây dựng ứng dụng realtime
+    // Sencha Touch: Một Framework  dùng để xây dựng ứng dụng Mobile
+    // ExtJS: Một Framework dùng xây dựng ứng dụng quản lý (Web Applications)
+    // jQuery: Một thư viện rất mạnh về hiểu ứng
+    // ReactJS: Một thư viện viết ứng dụng mobie
+    // Và còn nhiều thư viện khác
+    
+
+    //Viết chương trình javascript đầu tiên
+	//Tất cả những đoạn mã Javascript đều phải đặt trong cặp thẻ mở <script> và thẻ đóng </script>, ví dụ: --> 
+
+	<!-- <script languange="text/javascript"> 
+		alert("hello world");
+	</script> -->
+
+
+<!-- --------------------------------- -->
+   <!--  Đặt thẻ script ở đâu?
+
+Chúng ta có ba cách đặt thường được sử dụng sau đây:
+
+Cách 1: Internal - viết trong file html hiện tại
+
+Thông thường chúng ta sẽ viết những đoạn mã javascript trên phần head, tuy nhiên đó không phải là điều kiện bắt buộc, nghĩa là bạn có thể đặt ở đâu tùy thích miễn là những đoạn mã đó phải được bao lại bằng thẻ script. 
+<!--  -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JS</title>
+    <title></title>
+        <script language="javascript">
+            alert("Hello World!");
+        </script>
+</head>
+<body>
+
+</body>
+</html> -->
+
+
+<!-- Cách 2: External - viết ra một file js khác rồi import vào
+
+Bạn có thể viết những đoạn mã javascript ở một file có phần mở rộng là .js, sau đó dùng thẻ script để import vào (giống CSS vậy). Ví dụ file JS của mình có tên là demo.js thì lúc này mình import vào như sau:
+
+Code import JS
+
+    
+<script language="javascript" src="demo.js"></script>
+
+Lúc này bên trong file demo.js bạn không đặt thẻ scirpt nữa nhé vì nó là file có phần đuôi là .js rồi nên trình duyệt tự nhận diện đây là file chứa mã Javascript.
+ -->
+<!--  <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="utf-8"/>
+    <title>js</title>
+    <script type="text/javascript" src="lesson1.js"></script>
+ </head>
+ <body>
+
+ </body>
+ </html> -->
+
+ <!-- Cách 3: Inline  - viết trực tiếp trong thẻ HTML
+
+Inline nghĩa là bạn sẽ viết những đoạn mã Javascript trực tiếp trong thẻ HTML luôn. Như ví dụ dưới đây là mình đang viết dạng inline vì đoạn mã alert(1) được đặt trong sự kiện onclick của thẻ button.
+
+Code bên trong sự kiện click
+1 -->
+    
+<!-- <input type="button" onclick="alert('Xin chao ban vua click')" value="Click Me"/> -->
+
+<!-- ----------------- -->
+<!-- Viết chương trình Hello World! -->
+<!-- <!DOCTYPE html>
+<html>  
+<head>
+    <meta charset="utf-8">
+    <title>hello world</title>
+</head>
+<body>
+   <input type="button" name="button" id="clickme" value="Click Me">
+   <script type="text/javascript">
+         // Lấy element có id=clickme lưu vào biến button
+        var button=document.getElementById('clickme');   
+        // Khi click vào element chứa trong button thì thực hiện một function, 
+        // bên trong function thông báo lên Hello World!
+        button.addEventListener('click',function(){
+            alert("xin chao ban");
+        });
+
+   </script>
+
+</body>
+</html> -->
